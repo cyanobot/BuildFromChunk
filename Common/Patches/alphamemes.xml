@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Memes</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_SkyBurialSpot"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>2</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_Megalith"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_1x2c"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>2</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_2x2c"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>4</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_2x4c"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>8</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_3x3c"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>9</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					defName="AM_SkyBurialSpot" or
+					@Name="AM_NoDesignatorTableBaseStone" or
+					defName="AM_Megalith"
+					]/stuffCategories</xpath>
+				<value>
+					<stuffCategories Inherit="False">
+						<li>CYB_StoneChunks</li>
+					</stuffCategories>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

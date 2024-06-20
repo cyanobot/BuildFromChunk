@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<StuffCategoryDef>
+	<defName>CYB_StoneChunks</defName>
+	<label>stone chunk</label>
+	<noun>stone</noun>
+	<destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+	<destroySoundMedium>BuildingDestroyed_Stone_Small</destroySoundMedium>
+	<destroySoundLarge>BuildingDestroyed_Stone_Small</destroySoundLarge>
+</StuffCategoryDef>
+
+</Defs>

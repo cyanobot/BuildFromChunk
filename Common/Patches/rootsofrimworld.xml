@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Roots of Rimworld</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					@Name="RR_ShelfBase" or
+					@Name="RR_TorchLamp" or
+					defName="RR_StoneStool" or
+					defName="RR_StoneThrone"
+					]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>CYB_StoneChunks</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					@Name="RR_TorchLamp" or
+					defName="RR_StoneStool"
+					]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>1</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					defName="RR_ClosedUrn" or
+					defName="RR_HandleUrn" or
+					defName="RR_OpenUrn"
+					]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RR_StoneThrone"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>4</costStuffCount>
+				</value>
+			</li>
+			<!-- adjusting work up to compensate for lowered resource costs -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RR_StoneThrone"]/statBases/WorkToBuild</xpath>
+				<value>
+					<WorkToBuild>30000</WorkToBuild>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

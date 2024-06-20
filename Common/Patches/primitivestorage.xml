@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Primitive Storage</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					defName="VBY_Clay_Pot" or
+					defName="VBY_Clay_Pot_Two"
+					]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>CYB_StoneChunks</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[
+					defName="VBY_Clay_Pot" or
+					defName="VBY_Clay_Pot_Two"
+					]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

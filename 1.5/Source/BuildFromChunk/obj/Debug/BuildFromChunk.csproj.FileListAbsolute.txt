@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\Assemblies\BuildFromChunk.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\Source\BuildFromChunk\obj\Debug\BuildFromChunk.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\Source\BuildFromChunk\obj\Debug\BuildFromChunk.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\Source\BuildFromChunk\obj\Debug\BuildFromChunk.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\1.5\Source\BuildFromChunk\obj\Debug\BuildFromChunk.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\1.5\Source\BuildFromChunk\obj\Debug\BuildFromChunk.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\1.5\Source\BuildFromChunk\obj\Debug\BuildFromChunk.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BuildFromChunk\1.5\Assemblies\BuildFromChunk.dll

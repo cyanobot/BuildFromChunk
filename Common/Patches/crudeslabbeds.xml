@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Crude Slab Beds</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Crudeslab"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>2</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Crudeslab"]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>CYB_StoneChunks</li>
+					</stuffCategories>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

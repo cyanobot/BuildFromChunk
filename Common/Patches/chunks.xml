@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- attempts to identify all rock chunks -->
+<!-- and give them stuffProps if they don't already have them-->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+		(@ParentName="ChunkRockBase" or
+		thingCategories/li[text()="StoneChunks"])
+		and not(stuffProps)]</xpath>
+	<value>
+		<stuffProps/>
+	</value>
+	<success>Always</success>
+</Operation>
+
+<!-- category necessary for correct initialization of buildings-->
+<!-- all other stuff properties copied from stone blocks in C#-->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+		@ParentName="ChunkRockBase" or
+		thingCategories/li[text()="StoneChunks"]
+		]/stuffProps[not(categories)]</xpath>
+	<value>
+		<categories/>
+	</value>
+	<success>Always</success>
+</Operation>
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+		@ParentName="ChunkRockBase" or
+		thingCategories/li[text()="StoneChunks"]
+		]/stuffProps/categories</xpath>
+	<value>
+		<li>CYB_StoneChunks</li>
+	</value>
+</Operation>
+
+<!-- resourceReadoutPriority necessary -->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[
+		@ParentName="ChunkRockBase" or
+		thingCategories/li[text()="StoneChunks"]
+		]</xpath>
+	<value>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+	</value>
+</Operation>
+
+
+</Patch>

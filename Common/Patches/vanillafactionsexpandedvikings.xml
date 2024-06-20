@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Factions Expanded - Vikings</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VFEV_RuneStone"]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>CYB_StoneChunks</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VFEV_RuneStone"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>4</costStuffCount>
+				</value>
+			</li>
+			<!-- adjusting work up to compensate for lowered resource costs -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VFEV_RuneStone"]/statBases</xpath>
+				<value>
+					<WorkToBuild>70000</WorkToBuild>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

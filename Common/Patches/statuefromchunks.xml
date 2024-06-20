@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- replaces requirement for "Chunky" stuff with "CYB_StoneChunks"
+	so that it will also successfully use stone chunks from mods other than vanilla -->
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Statue from Chunks (Continued)</li>
+	</mods>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/*/stuffCategories/li[text()="Chunky"]</xpath>
+		<value>
+			<li>CYB_StoneChunks</li>
+		</value>
+	</match>
+</Operation>
+
+</Patch>
