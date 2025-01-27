@@ -15,25 +15,20 @@ namespace BuildFromChunk
     {
         public Main(ModContentPack mcp) : base(mcp)
         {
-            //GetSettings<Settings>();
+            GetSettings<Settings>();
             var harmony = new Harmony("cyanobot.buildfromchunk");
 
             harmony.PatchAll();
         }
 
-        /*
+        
         public override string SettingsCategory()
         {
-            return "name";
-        }
-
-        static public void ApplySettings()
-        {
-
+            return "Build From Chunk";
         }
 
         public override void DoSettingsWindowContents(Rect inRect) => Settings.DoSettingsWindowContents(inRect);
-        */
+        
     }
 
 }
